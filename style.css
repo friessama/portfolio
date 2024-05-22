@@ -9,11 +9,11 @@
     font-family: "Poppins", sans-serif;
 }
 :root{
-    --bg-color: #080808;
+    --bg-color: #06004e;
     --second-color: #131313;
     --text-color: white;
-    --main-color: #d2dd06;
-}
+    --main-color: #ff9ce3;
+}   
 
 html{
     font-size: 60%;
@@ -262,11 +262,11 @@ span{
     text-align: center;
     margin: 5rem 0;
 }
-.education{
+.projects{
     padding: 100px 15px;
     background: var(--second-bg-color);
 }
-.education h2{
+.projects h2{
     margin-bottom: 5rem;
 }
 .timeline-items{
@@ -378,7 +378,7 @@ span{
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
-.skill-box .service-info{
+.skill-box .skill-info{
     display: flex;
     color: black;
     flex-direction: column;
@@ -418,7 +418,7 @@ span{
 .contact form .input-box{
     display: flex;
     justify-content: center;
-    flex-wrap: flex;
+    flex-wrap: wrap;
 }
 .contact form .input-box input,
 .contact form textarea{
@@ -473,4 +473,16 @@ span{
     line-height: 1.6;
     margin-bottom: 0;
     text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
 }
