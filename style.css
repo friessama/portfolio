@@ -9,7 +9,7 @@
     font-family: "Poppins", sans-serif;
 }
 :root{
-    --bg-color: #174017;
+    --bg-color: #000000;
     --second-color: #131313;
     --text-color: white;
     --main-color: #49c96b;
@@ -56,7 +56,7 @@ body{
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
-    border-bottom: 30x solid transparent;
+    border-bottom: 3px solid transparent;
 }
 .navbar a:hover,
 .navbar a.active{
@@ -193,7 +193,7 @@ span{
 .text-animation span::before{
     content: "Web Developer";
     color: var(--main-color);
-    animation: wprds 20s infinite;
+    animation: words 20s infinite;
 }
 .text-animation span::after{
     content: "";
@@ -341,6 +341,22 @@ span{
     font-weight: 300;
     line-height: 22px;
 }
+.timeline-pic {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2rem;
+    margin: 20px 0;
+    background-position: center;
+    overflow: hidden;
+}
+
+.timeline-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 ::-webkit-scrollbar{
     width: 15px;
 }
@@ -373,25 +389,27 @@ span{
     transition: 0.4s ease-in-out;
 }
 .skill-box:hover{
-    background: white;
+    background: #85ffa5;
     color: black;
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
 .skill-box .skill-info{
     display: flex;
-    color: black;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px 0 black;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 5rem 5rem;
+    padding: 2rem;
 }
 .skill-info h4{
     font-size: 2rem;
     font-weight: 700;
     line-height: 0;
+    align-items: center;
     text-align: center;
 }
 .skill-info p{
